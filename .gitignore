@@ -44,6 +44,7 @@ src/**/*.js.map
 test/**/*.js
 test/**/*.js.map
 test-utils/**/*.js
+test-utils/**/*.js.map
 
 # E2E test output
 e2e/robot/test_results
