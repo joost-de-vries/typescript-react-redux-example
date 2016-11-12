@@ -18,15 +18,15 @@ import rootReducer from '../reducers';
 
 declare const __DEV__: boolean; // from webpack
 
-function configureStore(initialState) {
+function configureStore(this: any, initialState) {
   const store = createStore(
     rootReducer,
     initialState,
     compose(
       applyMiddleware(..._getMiddleware()),
       persistState('session', _getStorageConfig()),
-      __DEV__ && environment.devToolsExtension ?
-        environment.devToolsExtension() :
+      __DEV__ && this.devToolsExtension ?
+        this.devToolsExtension() :
         f => f));
 
   _enableHotLoader(store);
@@ -47,7 +47,7 @@ function _getMiddleware(): Middleware[] {
   return middleware;
 }
 
-const environment: any = window || this;
+// const environment: any = window || this;
 
 function _enableHotLoader(store) {
   if (!__DEV__) {

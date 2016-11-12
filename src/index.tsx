@@ -5,9 +5,9 @@ import 'ts-helpers';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-const { Provider } = require('react-redux');
-const { Router, browserHistory } = require('react-router');
-const { syncHistoryWithStore } = require('react-router-redux');
+import { Provider } from 'react-redux';
+import { Router, browserHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 
 import routes from './store/routes';
 import configureStore from './store/configure-store';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-const objectAssign = require('object-assign');
+import * as objectAssign from 'object-assign';
 import * as classNames from 'classnames';
 const Styles =  require('../modal.css');
 

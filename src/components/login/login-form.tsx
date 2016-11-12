@@ -1,5 +1,5 @@
 import * as React from 'react';
-const ReduxForm = require('redux-form');
+import {reduxForm} from 'redux-form';
 
 import Form from '../form/';
 import FormGroup from '../form/form-group';
@@ -104,7 +104,7 @@ class LoginForm extends React.Component<ILoginFormProps, void> {
   }
 }
 
-export default ReduxForm.reduxForm({
+export default reduxForm({
   form: 'login',
   fields: [
     'username',
