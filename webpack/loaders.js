@@ -8,16 +8,8 @@ exports.tslint = {
 
 exports.tsx = {
   test: /\.tsx?$/,
-  loader: 'awesome-typescript-loader',
+  loader: 'ts-loader',
   exclude: /node_modules/,
-};
-
-exports.istanbulInstrumenter = {
-  test: /^(.(?!\.test))*\.tsx?$/,
-  loader: 'istanbul-instrumenter-loader',
-  query: {
-    embedSource: true,
-  },
 };
 
 exports.html = {

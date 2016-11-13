@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const SplitByPathPlugin = require('webpack-split-by-path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 
 const sourceMap = process.env.TEST || process.env.NODE_ENV !== 'production'
   ? [new webpack.SourceMapDevToolPlugin({ filename: null, test: /\.tsx?$/ })]
@@ -39,8 +40,16 @@ const prodPlugins = [
   new SplitByPathPlugin([
     { name: 'vendor', path: [path.join(__dirname, '..', 'node_modules/')] },
   ]),
-  new webpack.optimize.UglifyJsPlugin({
-    compress: {
+  new webpack.optimize.OccurrenceOrderPlugin(),
+  new WebpackUglifyJsPlugin({
+    cacheFolder: path.resolve(__dirname, '../dist/webpack_cached/'),
+    debug: true,
+    minimize: true,
+    sourceMap: false,
+    output: {
+      comments: false,
+    },
+    compressor: {
       warnings: false,
     },
   }),

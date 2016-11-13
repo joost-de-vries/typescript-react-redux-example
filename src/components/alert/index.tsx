@@ -17,7 +17,7 @@ const statusClasses = {
 
 export default function Alert({
   children = null,
-  isVisible,
+  isVisible = false,
   status = 'info',
   id = '',
   testid = ''

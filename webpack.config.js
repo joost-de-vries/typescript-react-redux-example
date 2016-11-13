@@ -11,7 +11,7 @@ const applicationEntries = process.env.NODE_ENV === 'development'
   : [ ];
 
 module.exports = {
-  entry: [ './src/index.tsx' ].concat(applicationEntries),
+  entry: [ 'babel-polyfill', './src/index.tsx' ].concat(applicationEntries),
 
   output: {
     path: path.join(__dirname, 'dist'),
@@ -21,9 +21,7 @@ module.exports = {
     chunkFilename: '[id].chunk.js',
   },
 
-  devtool: process.env.NODE_ENV === 'production' ?
-    'source-map' :
-    'inline-source-map',
+  devtool: 'source-map',
 
   resolve: {
     extensions: [

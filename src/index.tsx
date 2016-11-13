@@ -1,5 +1,4 @@
 import 'babel-polyfill';
-
 import 'ts-helpers';
 
 import * as React from 'react';
