@@ -1,5 +1,5 @@
 import isPromise from '../utils/is-promise';
-const objectAssign = require('object-assign');
+import * as objectAssign from 'object-assign';
 
 
 export default function promiseMiddleware({ dispatch }) {

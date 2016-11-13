@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-const { routerReducer } = require('react-router-redux');
-const formReducer = require('redux-form').reducer;
+import { routerReducer } from 'react-router-redux';
+import { reducer as formReducer } from 'redux-form';
 import counter from './counter';
 import session from './session';
 
