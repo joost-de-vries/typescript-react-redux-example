@@ -7,7 +7,7 @@ interface ILoginModalProps extends React.Props<any> {
   isPending: boolean;
   hasError: boolean;
   onSubmit: () => void;
-};
+}
 
 export default function LoginModal({
   isVisible,

@@ -1,13 +1,11 @@
 /**
  * Returns whether the provided value is a promise
  *
- * @param {object} value Potential promise
- * @return {Boolean}
  */
-export default function isPromise(value) {
-  if (value !== null && typeof value === 'object') {
-    return value.promise && typeof value.promise.then === 'function';
-  }else {
+export default function isPromise(promise?: Promise<any> | any | null): boolean {
+  if (promise !== null && typeof promise === 'object') {
+    return promise.promise && typeof promise.promise.then === 'function';
+  } else {
     return false;
   }
 }

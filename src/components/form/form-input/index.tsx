@@ -12,7 +12,7 @@ interface IInputProps extends React.Props<any> {
   type?: string;
   placeholder?: string;
   id?: string;
-};
+}
 
 export default function Input({
   type = 'text',

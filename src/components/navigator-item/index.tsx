@@ -5,7 +5,7 @@ interface INavigatorItemProps extends React.Props<any> {
   isVisible?: boolean;
   mr?: boolean;
   ml?: boolean;
-};
+}
 
 export default function NavigatorItem({
   children = null,
@@ -24,4 +24,4 @@ export default function NavigatorItem({
       { children }
     </div>
   );
-};
+}

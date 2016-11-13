@@ -6,7 +6,7 @@ interface ICounterProps extends React.Props<any> {
   counter: number;
   increment: () => void;
   decrement: () => void;
-};
+}
 
 export default function Counter({
   counter,

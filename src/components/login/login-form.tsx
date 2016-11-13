@@ -19,7 +19,7 @@ interface ILoginFormProps {
     username: any;
     password: any;
   };
-};
+}
 
 // Making this a class-based component until redux-form typings support 
 // stateless functional components.

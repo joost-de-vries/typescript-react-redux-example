@@ -14,7 +14,7 @@ interface IAppProps extends React.Props<any> {
   session: any;
   login: () => void;
   logout: () => void;
-};
+}
 
 function mapStateToProps(state) {
   return {
@@ -74,8 +74,8 @@ class App extends React.Component<IAppProps, void> {
         </Content>
       </div>
     );
-  };
-};
+  }
+}
 
 export default connect(
   mapStateToProps,

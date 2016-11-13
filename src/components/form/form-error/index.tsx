@@ -5,7 +5,7 @@ interface IFormErrorProps extends React.Props<any> {
   isVisible: boolean;
   id?: string;
   testid?: string;
-};
+}
 
 export default function FormError({
   children = null,

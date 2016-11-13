@@ -5,9 +5,14 @@ const LOGIN_ERR_MSG = `
 `;
 
 export function login(user) {
-  return new Promise((resolve, reject) => {
-    return post('/auth/login', user)
-    .then(json => resolve(json.meta))
-    .then(null, (err) => reject(new Error(LOGIN_ERR_MSG)));
-  });
+  //  return new Promise((resolve, reject) => {
+  return post('/auth/login', user)
+    // .then(json => resolve(json.meta))
+    .then((json?, err?) => {
+      if (err) {
+        throw new Error(LOGIN_ERR_MSG);
+      } else {
+        return json.meta;
+      }
+    });
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 interface IFormGroupProps extends React.Props<any> {
   testid?: string;
-};
+}
 
 export default function FormGroup({
   children = null,

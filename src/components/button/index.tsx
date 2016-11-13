@@ -7,7 +7,7 @@ interface IButtonProps extends React.Props<any> {
   className?: string;
   id?: string;
   testid?: string;
-};
+}
 
 export default function Button({
   onClick = null,

@@ -3,7 +3,7 @@ import * as objectAssign from 'object-assign';
 import * as classNames from 'classnames';
 const Styles =  require('../modal.css');
 
-interface IModalContentProps extends React.Props<any> {};
+interface IModalContentProps extends React.Props<any> {}
 
 export default function ModalContent({
   children = null

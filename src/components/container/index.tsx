@@ -5,7 +5,7 @@ interface IContainerProps extends React.Props<any> {
   size: number;
   center: boolean;
   testid?: string;
-};
+}
 
 export default function Container({
   size = 1,

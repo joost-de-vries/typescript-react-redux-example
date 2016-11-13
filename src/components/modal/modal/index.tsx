@@ -2,7 +2,7 @@ import * as React from 'react';
 
 interface IModalProps extends React.Props<any> {
   isVisible?: boolean;
-};
+}
 
 export default function Modal({
   isVisible = false,
@@ -19,4 +19,4 @@ export default function Modal({
       { children }
     </div>
   );
-};
+}

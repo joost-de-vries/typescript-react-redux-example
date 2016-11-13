@@ -1,4 +1,5 @@
 {
+  "rulesDirectory": "node_modules/tslint-eslint-rules/dist/rules",
   "rules": {
     "class-name": true,
     "comment-format": [true, "check-space"],
@@ -8,7 +9,7 @@
     "indent": [true, "spaces"],
     "label-position": true,
     "label-undefined": true,
-    "max-line-length": [true, 80],
+    "max-line-length": [true, 120],
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [true,
@@ -53,6 +54,36 @@
       "check-separator",
       "check-type"
     ],
-    "quotemark": [ true, "single", "jsx-double" ]
+    "quotemark": [ true, "single", "jsx-double" ],
+    
+    // tslint-eslint-rules
+    "array-bracket-spacing": [
+      true,
+      "never",
+      {
+        "singleValue": true,
+        "objectsInArrays": true,
+        "arraysInArrays": true
+      }
+    ],
+    "block-spacing": [true, "always"],
+    "brace-style": [true, "1tbs", { "allowSingleLine": true }],
+    "handle-callback-err": [true, "err"],
+    "no-constant-condition": true,
+    "no-control-regex": true,
+    "no-duplicate-case": true,
+    "no-empty-character-class": true,
+    "no-ex-assign": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": [true, "both"],
+    "no-invalid-regexp": true,
+    "no-irregular-whitespace": true,
+    "no-regex-spaces": true,
+    "no-sparse-arrays": true,
+    "no-unexpected-multiline": true,
+    "use-isnan": true,
+    "valid-jsdoc": false,
+    "valid-typeof": true
   }
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 interface IFormProps extends React.Props<any> {
   handleSubmit: () => void;
-};
+}
 
 export default function Form({
   children = null,

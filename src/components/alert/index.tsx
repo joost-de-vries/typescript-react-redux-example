@@ -6,7 +6,7 @@ interface IAlertProps extends React.Props<any> {
   status?: string;
   id?: string;
   testid?: string;
-};
+}
 
 const statusClasses = {
   info: 'bg-blue white',
@@ -36,4 +36,4 @@ export default function Alert({
       { children }
     </div>
   );
-};
+}
