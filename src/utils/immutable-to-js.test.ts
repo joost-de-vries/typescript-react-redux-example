@@ -6,13 +6,13 @@ describe('immutableToJS', () => {
   const mockState = {
     state: {
       name: 'John',
-      sons: [{
+      sons: [ {
         name: 'Lill John',
         age: 12,
       }, {
         name: 'Big John',
         age: 34,
-      }],
+      } ],
     },
   };
 
